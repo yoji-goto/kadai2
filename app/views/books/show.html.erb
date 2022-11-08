@@ -1,10 +1,14 @@
-<body>
-<p>
-  <p>Titel:</p>
-  <%= @book.title %>
-  </p>
-<p>
-  <p>Body:</p>
-  <%= @book.body %>
-</p>
+<body class="main">
+<div class="show">
+  <p class="show-item">Titel:</p>
+  <p><%= @book.title %></p>
+</div>
+
+<div class="show">
+  <p class="show-item">Body:</p>
+  <p><%= @book.body %></p>
+</div>
+<%= link_to "Edit", "#{@book.id}/edit" %>
+|
+<%= link_to "Back","/books" %>
 </body>
