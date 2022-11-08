@@ -1,16 +1,21 @@
-<body class="index">
+<body class="main">
 <h1>Books</h1>
-<div class="head">
-<div>Title</div>
-<div>Body</div>
+
+<div class="index">
+<h3>Title</h3>
+<h3>Body</h3>
 </div>
-<div class="books">
-<div>title:id</div>
-<div>body:id</div>
-<div href="">Show</div>
-<div href="">Edit</div>
-<div href="">Destroy</div>
+
+<div class="index">
+<% @books.each do |book| %>
+<td><%= book.title %></td>
+<td><%= book.body %></td>
+<%= link_to "Show", "/books/#{book.id}" %>
+<%= link_to "Edit", "/books/#{book.id}/edit" %>
+<a href="">Destroy</a>
+<% end %>
 </div>
+
 
 <h2>New book</h2>
 <%= form_with model: @book do |f| %>

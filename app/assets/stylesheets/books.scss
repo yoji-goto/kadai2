@@ -2,15 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.main{
+    margin:33px;
+}
+
 .head, .books{
     display:flex;
     justify-content:sapace-around;
 }
+
 
 .new{
     margin:0;
 }
 
 .index{
-    margin:33px;
+    display:flex;
+    justify-content:left;
 }
