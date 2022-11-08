@@ -4,6 +4,7 @@
 
 .main{
     margin:33px;
+    line-height:18px;
 }
 
 .head, .books{
@@ -17,8 +18,17 @@
 }
 
 .index{
-    display:flex;
-    justify-content:left;
+    display:table;
+}
+
+.index > div{
+    font-weight:bold;
+}
+
+
+.index > div,p{
+    display:table-cell;
+
 }
 
 .show{

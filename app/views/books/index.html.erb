@@ -2,14 +2,14 @@
 <h1>Books</h1>
 
 <div class="index">
-<h3>Title</h3>
-<h3>Body</h3>
+<div>Title</div>
+<div>Body</div>
 </div>
 
 <div class="index">
 <% @books.each do |book| %>
-<td><%= book.title %></td>
-<td><%= book.body %></td>
+<p><%= book.title %></p>
+<p><%= book.body %></p>
 <%= link_to "Show", "/books/#{book.id}" %>
 <%= link_to "Edit", "/books/#{book.id}/edit" %>
 <a href="">Destroy</a>
