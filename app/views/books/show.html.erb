@@ -8,7 +8,7 @@
   <p class="show-item">Body:</p>
   <p><%= @book.body %></p>
 </div>
-<%= link_to "Edit", "#{@book.id}/edit" %>
+<%= link_to "Edit", edit_book_path(@book.id) %>
 |
-<%= link_to "Back","/books" %>
+<%= link_to "Back", index_book_path(@book.id) %>
 </body>
