@@ -1,13 +1,13 @@
 <body class="main">
 <h1>Books</h1>
 
+<div class="index">
 <div class="index-head">
 <div>Title</div>
 <div>Body</div>
 <div colspan="3"></div>
 </div>
-
-<div class="index" %>
+<div class="index-main">
 <% @books.each do |book| %>
 <div class="index-list">
 <div class="index-list-item"><%= book.title %></div>
@@ -18,8 +18,8 @@
     <div class="sed"><%= link_to "Destroy", destroy_book_path(book.id), method: :delete, "data-confirm" => "本当削除しますか" %></div>
 </div>
 </div>
-<% end %>
 </div>
+<% end %>
 
 
 <h2>New book</h2>

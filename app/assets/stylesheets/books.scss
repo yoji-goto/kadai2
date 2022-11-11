@@ -23,27 +23,40 @@ body{
     margin:0;
 }
 
-.index-head{
-    display:flex;
-    justify-content:space-around;
-    font-weight:bold;
+.index{
+    display:table;
+    border-collapse:separeate;
+    text-indent:initial;
 }
 
+.index-head{
+    display:table-header-group;
+    vertical-align:middle;
+    font-weight:bold;
+    padding:5px;
+}
 
+.index-head > div{
+    display:table-cell;
+}
+
+.index-main{
+    display:table-row-group;
+    vertical-align:middle;
+}
 .index-list{
-    display:flex;
+    display:table-row;
+    vertical-align:inherit;
     align-items:center;
-    width:90%;
+    padding:5px;
 }
 
 .index-list-item{
-    display:flex;
-    margin:auto;
-    justify-content:sapace-between;
+padding:5px;
 }
 
 .sed{
-    display:flex;
+    display:inline-flex;
     margin:0 10px;
 }
 
