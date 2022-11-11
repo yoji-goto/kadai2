@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+body{
+    font-size:13px;
+    line-height:18px;
+    margin:33px;
+}
+
 .main{
     margin:33px;
     line-height:18px;
@@ -17,18 +23,28 @@
     margin:0;
 }
 
-.index{
-    display:table;
-}
-
-.index > div{
+.index-head{
+    display:flex;
+    justify-content:space-around;
     font-weight:bold;
 }
 
 
-.index > div,p{
-    display:table-cell;
+.index-list{
+    display:flex;
+    align-items:center;
+    width:90%;
+}
 
+.index-list-item{
+    display:flex;
+    margin:auto;
+    justify-content:sapace-between;
+}
+
+.sed{
+    display:flex;
+    margin:0 10px;
 }
 
 .show{
@@ -40,4 +56,24 @@ line-height:18px;
 
 .show-item{
     font-weight:bold;
+}
+
+.error{
+    border:2px solid red;
+    width:450px;
+    background-color:#f0f0f0;
+    margin-bottom:20px;
+}
+
+.error-top{
+    background-color:red;
+    color:white;
+    font-weight:bold;
+    padding:5px;
+}
+
+.new-error{
+    background-color:red;
+    display:table;
+    padding:2px;
 }
