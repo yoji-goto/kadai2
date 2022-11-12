@@ -1,7 +1,7 @@
 <body class="main">
 <h1>Books</h1>
 
-<div class="index">
+<table>
 <div class="index-head">
 <div>Title</div>
 <div>Body</div>
@@ -15,11 +15,11 @@
 <div class="index-list-item">
     <div class="sed"><%= link_to "Show", book_path(book.id) %></div>
     <div class="sed"><%= link_to "Edit", edit_book_path(book.id) %></div>
-    <div class="sed"><%= link_to "Destroy", destroy_book_path(book.id), method: :delete, "data-confirm" => "本当削除しますか" %></div>
+    <div class="sed"><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "本当削除しますか" %></div>
 </div>
 </div>
 <% end %>
-</div>
+</table>
 
 
 <h2>New book</h2>
